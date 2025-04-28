@@ -5,7 +5,7 @@ const btnCompletes = document.querySelectorAll(".btn-complete")
 for(const btncomplete of btnCompletes)
 {
     btncomplete.addEventListener("click", function(event){
-        alert("Your task status Updated")
+        alert("Board Updated Successfully")
         let totalTask = getInnerTextById("total-task-toComplete")
         let alltotalTask = getInnerTextById("all-total-task")
         alltotalTask++;
@@ -15,7 +15,7 @@ for(const btncomplete of btnCompletes)
 
         event.target.disabled = true ;
 
-        if(totalTask === 0) alert("Bravoo you have completed all your task")
+        if(totalTask === 0) alert("congrates!!! You have completed all the current task")
 
         const completeParent = event.target.parentElement.parentElement;
         
